@@ -1,5 +1,7 @@
 *{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-
+body{
+    margin: 0%;
+}
 #background{
     background-image: url(/week1/project/image\ resturant.avif);
     background-position: center;
@@ -41,6 +43,7 @@ img.food{
     height: 30vh;
     width: 30vw;
 }
+
 #menu{
     display: flex;
     flex-wrap: wrap;
