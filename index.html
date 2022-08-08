@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="/week1/project/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Resturant</title>
   </head>
   <body>
-    <div class="button">
-      <a href="#"><button>home</button></a>
-      <a href="#menu2"><button>menu</button></a>
-      <a href="#faq"><button>FAQ</button></a>
-      <a href="#contact"><button>contact</button></a>
-    </div>
     <div id="background">
+    <span class="button">
+      <a href="#">home</a>
+      <a href="#menu2">menu</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">contact</a>
+    </span>
       <div id="opacity">
         <h1 class="welcom">welcom to the resturant</h1>
         <p class="welcom">
@@ -19,90 +20,101 @@
         </p>
         <p class="welcom">call 0526766563 for reservations</p>
       </div>
-    </div>
-    <h1 id="menu2">Our menu</h1>
-    <div id="menu">
-      
+    <h1 id="menu-h1">Our menu</h1>
+    <div class="menu">
+      <div id="overlay">
         <img class="food" src="https://d3o5sihylz93ps.cloudfront.net/wp-content/uploads/2020/01/15145107/14.jpg"
           alt=""
-        />shakshuka
-    
-     
+        />
+      </div>
+    <div id="overlay">
         <img class="food"
           src="https://img.mako.co.il/2015/01/29/hummus_efrat_c.jpg"
           alt=""
-        />hummus
+        />
+      </div>
       
-      
+      <div id="overlay">
         <img class="food"
           src="https://happykitchen.co.il/wp-content/uploads/2022/01/%D7%A7%D7%91%D7%91%D7%99%D7%9D-1.jpg"
           alt=""
-        />kebab
+        />
+      </div>
       
-      
+      <div id="overlay">
         <img class="food"
           src="https://www.foodisgood.co.il/wp-content/uploads/2014/11/%D7%93%D7%92-%D7%A1%D7%9C%D7%9E%D7%95%D7%9F-%D7%91%D7%AA%D7%A0%D7%95%D7%A8-596x384.jpg"
           alt=""
-        />fish
+        />
+      </div>
       
-      
+      <div id="overlay">
         <img class="food"
           src="https://d3o5sihylz93ps.cloudfront.net/wp-content/uploads/sites/5/2021/01/13043234/unnamed-scaled.jpg"
           alt=""
-        />pasta
+        />
+      </div>
       
-      
+      <div id="overlay">
         <img class="food"
           src="https://www.foodisgood.co.il/wp-content/uploads/2022/04/nicoise-salad-recipe-939x626.jpg"
           alt=""
-        />salad
-      
-      
+        />
+      </div>
+      <div id="overlay">
         <img class="food"
           src="https://foodiesrecipes.com/wp-content/uploads/2020/01/%D7%97%D7%91%D7%99%D7%AA%D7%94-%D7%A2%D7%9D-%D7%A2%D7%92%D7%91%D7%A0%D7%99%D7%95%D7%AA-%D7%95%D7%91%D7%A6%D7%9C.jpg"
           alt=""
-        />egg
+        />
+      </div>
       
-      
+      <div id="overlay">
         <img class="food"
           src="https://static.onecms.io/wp-content/uploads/sites/9/2021/06/22/different-types-of-tea-FT-BLOG0621.jpg"
           alt=""
-        />tea
+        />
+      </div>
       
+      <div id="overlay">
         <img class="food"
           src="https://www.tastingtable.com/img/gallery/coffee-brands-ranked-from-worst-to-best/l-intro-1645231221.jpg"
           alt=""
-        />coffee
+        />
+      </div>
       </div>
     </div>
-    <h1 id="faq">about</h1>
-    <div>
-      <pre id="about">
-        We Mainly Focused On:
-        seeds selection according to taste and nutrition values
-        growing fruits and vegetables on own fields and orchards
-        harmless reservation of products (as frozen, dried and liquid)
-        cooking homemade jams, marmalades and seasonings
-        exploring new recipes for our products
-        
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.
-        It has survived not only five centuries, but also the leap into electronic 
-        typesetting remaining essentially unchanged.
-        
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book. It has survived not only five centuries, but also the leap into
-        electronic typesetting remaining essentially unchanged.
-      </pre>
-    </div>
-    <h1>contact us</h1>
+    <div id="back2">
+    
+    <article>
+      <h1 id="faq">about</h1>
+    <p id="about">
+      We Mainly Focused On:
+      seeds selection according to taste and nutrition values
+      growing fruits and vegetables on own fields and orchards
+      harmless reservation of products (as frozen, dried and liquid)
+      cooking homemade jams, marmalades and seasonings
+      exploring new recipes for our products
+      
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.
+      It has survived not only five centuries, but also the leap into electronic 
+      typesetting remaining essentially unchanged.
+      
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book. It has survived not only five centuries, but also the leap into
+      electronic typesetting remaining essentially unchanged.
+    </p>
+  </article>
+</div>
+    
     <div id="contact">
+      <h1>contact us</h1>
       <label for="fname">First name:</label>
       <input type="text" ><br></br>
       <label for="lname">Last name:</label>
@@ -116,7 +128,9 @@
       <option value="">3</option>
       </select><br></br>
       <input type="checkbox">i agree the terms<br></br>
-      <button>submit</button>
+      <button id="submit">submit</button>
     </div>
+
+
   </body>
 </html>

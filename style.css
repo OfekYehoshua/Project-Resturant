@@ -1,67 +1,212 @@
-*{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-body{
-    margin: 0%;
+* {
+  font-family: fantasy;
+  scroll-behavior: smooth;
 }
-#background{
-    background-image: url(/week1/project/image\ resturant.avif);
+
+body {
+margin: 0%;
+}
+#background {
+  background-image: url(https://i.pinimg.com/originals/03/d9/d1/03d9d18c3531291c21d864bf8ebdd9fe.jpg);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 100vh;
-    width: 100vw;
-}
-#opacity{ 
-    background-color: rgba(255, 204, 0, 0.509);
-    height:100vh;    
-    width:35vw;
-    color:black ;
-       
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.welcom{
-    text-align: center;
 
-
-}
-h1.welcom{
-    font-size: 3rem;
-    margin: initial;
-}
-p.welcom{
-    font-size: 30px;
-}
-.button{
-    color: tomato;
-    position: absolute;
-    width: 80vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 30vw;
-}
-img.food{
-    height: 30vh;
-    width: 30vw;
+#opacity {
+  background-color: #ee9b0073;
+  height: 100vh;
+  width: 35vw;
+  color:black;
+ 
 }
 
-#menu{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 120vh;
-    width: 105vw;
-    text-align: inherit;
+.welcom {
+  text-align: center;
+}
+h1.welcom {
+  font-size: 4rem;
+  margin: initial;
+}
+p.welcom {
+  font-size: 35px;
+}
+.button {
+  position: absolute;
+  position: fixed;
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 30vw;
+  transition: ease-in-out 300ms;
+
+}
+.button a{
+  color: black;
+  font-weight: 300;
+  height: 0%;
+  background-color: #fcbf49;
+  
 }
 
-pre#about{
-    text-align: center;
+.button a:hover{
+transform: scale(1.2);
+
 }
-#faq{
-    text-align: center;
+.food:hover{
+transform: scale(1.05);
+
+}
+
+article.food{
+  color: #ee9b00;
+}
+img.food {
+  height: 30vh;
+  width: 30vw;
+  border-radius: 25px;
+  color: #ee9b00;
+  
+}
+.food{
+  color: #ee9b00;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  text-align: inherit;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+
+pre#about {
+  text-align: center;
+ 
+}
+#faq {
+  text-align: center;
+  margin: 0%;
+}
+#contact {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0%;
+}
+.back-about{
+  background-image: url(https://img.lovepik.com/photo/50108/4102.jpg_wh860.jpg);
+  background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#submit:hover{
+  transform: scale(1.5);
+
+}
+#back2{
+  background: #fcbf49;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+article {
+  background: white;
+  width: 40%;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+article::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/rip.svg) bottom center;
+  background-size: 150%;
 }
 #contact{
-    text-align: center;
+  background:#fcbf49;
+
 }
+
+
+
+@media only screen and (max-width: 768px) {
+.button{
+  position:fixed;
+  justify-content: none;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 0%;
+}
+.button a:hover{
+
+
+}
+
+#opacity{
+  width: 40%;
+  height: 60vh;
+}
+
+h1.welcom{
+  padding-top: 20px;
+  font-size: 30px;
+}
+p.welcom{
+  font-size: 20px;
+
+
+}
+h1#menu2{
+text-align: inherit;
+}
+#menu{
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: fit-content;
+}
+img.food{
+  height: 40vh;
+  width: 100vw;
+}
+#faq{
+  text-align: inherit;
+  
+}
+pre#about{
+text-align: inherit;
+}
+
 h1{
-    text-align: center;
+  text-align: inherit;
+}
+#contact{
+  text-align: center;
+  font-size: x-small;
+}
+pre{
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 }
